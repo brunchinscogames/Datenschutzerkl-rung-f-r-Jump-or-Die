@@ -1,25 +1,118 @@
-
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <title>Datenschutzerklärung – Jump or Die</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #0f0f14;
+      --card: #1a1a22;
+      --accent: #ff3b3b;
+      --text: #eaeaf0;
+      --muted: #b0b0c3;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1b1b28, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      max-width: 720px;
+      background: var(--card);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: var(--accent);
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .highlight {
+      background: rgba(255, 59, 59, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+
+    .contact {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact strong {
+      color: var(--text);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      opacity: 0.7;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Datenschutzerklärung – Jump or Die</h1>
+  <div class="container">
+    <h1>Datenschutzerklärung</h1>
 
-  <p>Diese App erhebt, speichert oder verarbeitet keine personenbezogenen Daten.</p>
+    <p>
+      Diese App erhebt, speichert oder verarbeitet <strong>keine personenbezogenen Daten</strong>.
+    </p>
 
-  <p>Es werden keine Benutzerkonten erstellt, keine Analysedienste genutzt
-  und keine Daten an Dritte weitergegeben.</p>
+    <div class="highlight">
+      Jump or Die funktioniert vollständig offline.<br>
+      Es gibt keine Benutzerkonten, kein Tracking und keine Analyse.
+    </div>
 
-  <p>Die App funktioniert vollständig offline.</p>
+    <p>
+      Es werden keinerlei Daten an Dritte weitergegeben.  
+      Die App nutzt keine externen Dienste, keine Werbung und keine Analytics-Tools.
+    </p>
 
-  <p>
-    Kontakt:<br>
-    BrunchinscoGames<br>
-    E-Mail: brunchinsco@gmail.com
-  </p>
+    <div class="contact">
+      <p>
+        <strong>Verantwortlich:</strong><br>
+        BrunchinscoGames<br>
+        E-Mail: brunchinsco@gmail.com
+      </p>
+    </div>
+
+    <footer>
+      © 2026 BrunchinscoGames – Jump or Die
+    </footer>
+  </div>
 </body>
 </html>
